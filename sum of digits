@@ -1,0 +1,23 @@
+#include<stdio.h>
+sum(int a)
+{
+	int c, q;
+	if(a==0)
+	{
+		return 0;
+	}
+	else
+	{
+		c=a%10;
+		q=a/10;
+		return c+sum(q);
+		
+	}
+}
+main()
+{
+	int a;
+	printf("Enter a number: ");
+	scanf("%d", &a);
+	printf("Sum of digits: %d", sum(a));
+}
